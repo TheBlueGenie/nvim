@@ -39,6 +39,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Themes
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
+	Plug 'dylanaraps/wal.vim'
 	Plug 'dracula/vim', { 'as': 'dracula' }
 
 " Center text
@@ -79,8 +80,8 @@ call plug#end()
   set encoding=utf-8
   set number relativenumber
   set termguicolors
-  colorscheme dracula
-	set background=dark
+  colorscheme wal
+"	set background=dark
 
   " Tab Settings"
   set shiftwidth=2
