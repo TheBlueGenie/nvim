@@ -39,8 +39,9 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Themes
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
-	Plug 'dylanaraps/wal.vim'
-	Plug 'dracula/vim', { 'as': 'dracula' }
+	"Plug 'dylanaraps/wal.vim'
+	"Plug 'dracula/vim', { 'as': 'dracula' }
+	Plug 'arcticicestudio/nord-vim'
 
 " Center text
 	Plug 'junegunn/goyo.vim'
@@ -80,8 +81,8 @@ call plug#end()
   set encoding=utf-8
   set number relativenumber
   set termguicolors
-  colorscheme wal
-"	set background=dark
+  colorscheme nord
+	"set background=dark
 
   " Tab Settings"
   set shiftwidth=2
@@ -109,7 +110,7 @@ call plug#end()
   let g:airline#extensions#wordcount#enabled = 1
   let g:airline#extensions#hunks#non_zero_only = 1
 	let g:airline#extensions#tabline#enabled = 1
-  let g:airline_theme = 'dracula'
+  let g:airline_theme = 'nord'
 
   " Vim Hexokinase
   let g:Hexokinase_refreshEvents = ['InsertLeave']
